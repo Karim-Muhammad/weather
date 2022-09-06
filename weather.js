@@ -20,7 +20,7 @@ app.post("/", (req, res) => {
     let units = req.body.unit;
 
     https.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${config.apiKey}&units=${units}`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${process.env.API_KEY}&units=${units}`,
         (response) => {
             response.on("data", (returnData) => {
                 let data = JSON.parse(returnData);
