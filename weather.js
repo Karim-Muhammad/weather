@@ -5,6 +5,7 @@ const https = require("https");
 const app = express();
 app.use(express.static(__dirname + "/testAPI"));
 app.use(express.json());
+require("dotenv").config();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
