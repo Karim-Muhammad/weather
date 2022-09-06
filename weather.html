@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="weather.css" type="text/css" />
+    </head>
+    <body>
+        <div class="header">
+            <h1>Weather APP</h1>
+        </div>
+        <h2>Enter Your Queries</h2>
+        <div class="form">
+            <form action="/" method="post">
+                <label for="countries">country</label>
+                <input
+                    type="text"
+                    name="country"
+                    id="countries"
+                    value="Palestine"
+                />
+
+                <label for="unit">unit</label>
+                <select name="unit" id="unit">
+                    <option value="metric">Celcius</option>
+                    <option value="imperial">Fahrenheit</option>
+                    <option value="standard">Kelven</option>
+                </select>
+                <input type="submit" id="submit" value="fetch" />
+            </form>
+        </div>
+    </body>
+</html>
